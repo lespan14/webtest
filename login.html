@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id = "container" class="wrap">
+        <div class="main-wrap">
+            <form name="login_form" method="get">
+                <div class="login-form-wrap">
+                    <div class="login-input-wrap">
+                        
+                        <input type="text" id="testid">
+                    </div>
+                    <div class="login-input-wrap">
+                        
+                        <input type="password" id="testpw">
+                    </div>
+
+                    <div class="login-btn-wrap">
+                        <button type="button" id="loginbutton1" class="login-btn" onkeyup='check()'>Submit</button>
+                    </div>
+
+                    <input id='typevalue' onkeyup='printName()'/>
+                        <div id='result'></div>
+
+    
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+
+</html>
