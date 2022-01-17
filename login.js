@@ -5,7 +5,7 @@ let pw = document.querySelector('input#testpw');
 
 hlg.addEventListener('click',function() {
 
-    alert('what');
+    
 
     let id = document.querySelector('input#testid');
     let pw = document.querySelector('input#testpw');
