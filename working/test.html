@@ -17,22 +17,19 @@
     <br><i>This text is italic</i>
     <br><em>This text is emphasized</em>
     <br><small>This is some smaller text.</small>
-    <br><p>Do not forget to buy <mark>milk</mark> today. <mark> markings are in yellow</mark></p>
 
     <a style="color:red"> <em>Links</em></a>
 
     <h1>Github</h1>
     <img src="/img/git.png" width="100px" length="100px">
-    <h4 id = "Git"><a href="https://github.com/lespan14">This is a link to github</a></h4>
+    <h4 id = "Git"><a href="https://github.com/lespan14">Github</a></h4>
 
-    <h6>These headings represents size 1 to 6</h6>  
-
-    <h1>My Study Now</h1>
-    <a> Now I am trying to study HTML and CSS. </a>
+    <h1>Study</h1>
+    <a>trying HTML CSS. </a>
 
     <h1>My Goal</h1>
-    <a>until 2023 get OSCP certificate<br></a>
-    <a>To finish this website</a>
+    <a>OSCP certificate<br></a>
+    <a>website</a>
     
     <a href="https://www.offensive-security.com/pwk-oscp/" style="color:red">OSCP</a>
 
@@ -43,10 +40,63 @@
         <a>PW</a>
         <input type="text" id="loginpw">
         <button type="button" id = "loginfunc" value="login">Login</button>
-        <script src="./testlogin.js"></script>
+        
+
+
+        <br>
+        <a>Make cookie name</a>
+        <input type="text" id="makecokname">
+        <a>Value</a>
+        <input type="text" id="makecokval">
+        <a>exp</a>
+        <input type="text" id="makecokexp">
+        <button id="cokmakebtn" value="makecookie">Make cookie</button>
+
+        <br>
+        <a>Del cookie name</a>
+        <input type="text" id="delcokname">
+        <button id="cokdelbtn" value="delcookie">Del cookie</button>
+        <br><br>
+        <a>Cookie list : <p id="lstcookie"></p></a>
+        <script>
+            let allCookies = document.cookie;
+            document.getElementById("lstcookie").innerHTML = allCookies;
+        </script>
+
+        
     </div>
     
 
-    
+    <div id="contt">
+        <a><em>TEST</em></a><br>
+        
+        
+        <button id="but1" value="button1" onclick="loadCode();">Button1</button>
+
+        <button id="but2" value="button2" onclick="loadCode();">Button2</button>
+
+        <div id="loadView"></div>
+    </div>
 </body>
+
+
+<script src="./testlogin.js"></script>
+
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript"> 
+    $(document).ready(function () {
+        $('button#but1').on('click', function () {
+            
+            $('#loadView').load('button1.html');
+        })
+
+        $('button#but2').on('click',function() {
+            
+            $('#loadView').load('button2.html');
+        })
+})
+
+    
+
+</script> 
 </html>
